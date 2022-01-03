@@ -1,4 +1,5 @@
-# Cifar10_Classification
+# cifar10-classification
+
 ## 程式簡介
 ### 簡述
 * 使用「Convolutional Neural Network, CNN」實作 Cifar10 資料集的「分類」問題
