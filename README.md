@@ -23,9 +23,7 @@
 ### Label Encoding
 > 例如：下圖中的country欄位，三個國家都被數字0、1、2取代。
 
-![image](https://user-images.githubusercontent.com/86537930/132143944-2295ee1a-de6d-4d98-a161-d92d35ef9987.png)  
-	:arrow_down:  
-![image](https://user-images.githubusercontent.com/86537930/132143949-a6aa6adc-008f-42d9-a805-573826c99ac7.png)
+![圖片2](https://user-images.githubusercontent.com/93152909/147915491-d4e23a40-512d-4411-8acb-503607d5791c.png)
 
 * 類似於流水號，依序將新出現的類別依序編上新代碼，已出現的類別編上已使用的代碼
 
@@ -42,9 +40,8 @@
 ### One Hot Encoding
 > 例如：下圖中的country欄位，獨立出同等類別數量的欄位，並用0/1 表示是否
  
-![image](https://user-images.githubusercontent.com/86537930/132143944-2295ee1a-de6d-4d98-a161-d92d35ef9987.png)  
-	:arrow_down:  
-![image](https://user-images.githubusercontent.com/86537930/132144765-463dd275-84b2-4572-996f-9cfde5319b15.png)
+![圖片3](https://user-images.githubusercontent.com/93152909/147915630-0c419c67-f4d6-40fe-837b-3669de704801.png)
+
 
 * 為了改良數字大小沒有意義的問題，將不同的類別分別獨立為一欄
 * 缺點是需要較大的記憶空間與計算時間，且「類別欄位過多」或「單一類別過多」時越嚴重
