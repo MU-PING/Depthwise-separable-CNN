@@ -1,4 +1,4 @@
-# depthwise-separable-CNN
+# Depthwise-separable-CNN
 
 ## 程式簡介
 ### 簡述
