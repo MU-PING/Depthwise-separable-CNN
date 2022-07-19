@@ -80,7 +80,7 @@
 
 ![image](https://user-images.githubusercontent.com/93152909/153932594-6c1095cc-2658-4265-a803-7acbc35bd3ea.png)
 
-### 補充
+## 補充
 如果要換成 mnist 的資料集( 正確率約略：0.98 )，更改下列兩行即可：
 ```python
 from keras.datasets import mnist
