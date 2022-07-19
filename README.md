@@ -80,43 +80,6 @@
 
 ![image](https://user-images.githubusercontent.com/93152909/153932594-6c1095cc-2658-4265-a803-7acbc35bd3ea.png)
 
-## 資料類別編碼
-> 在訓練AI模型前，會針對「類別」的資料做前處理，主要為兩種方法( 還有很多其他方法，有機會再介紹 )
-* Label Encoding：把每個類別 mapping 到某個整數，不會增加新欄位  
-
-* One Hot Encoding : 為每個類別新增一個欄位，用 0/1 表示是否  
-### Label Encoding
-> 例如：下圖中的country欄位，三個國家都被數字0、1、2取代。
-
-![圖片2](https://user-images.githubusercontent.com/93152909/147915491-d4e23a40-512d-4411-8acb-503607d5791c.png)
-
-* 類似於流水號，依序將新出現的類別依序編上新代碼，已出現的類別編上已使用的代碼
-
-* 能確實轉成分數，但缺點是分數的大小順序「常常」是沒有意義的
-  * 上述：country本質是類別，並沒有順序大小之分，這樣做模型會認為country之間存在著0 < 1 < 2的關係
-  
-* 可以使用 sklearn 的套件：
-	```python
-	from sklearn.preprocessing import LabelEncoder
-	labelencoder = LabelEncoder()
-	data_le = pd.DataFrame("(Own DataFrame)")  
-	data_le["(LabelEncode column)"] = labelencoder.fit_transform(data_le["(LabelEncode column)"])
-	```
-### One Hot Encoding
-> 例如：下圖中的country欄位，獨立出同等類別數量的欄位，並用0/1 表示是否
- 
-![圖片3](https://user-images.githubusercontent.com/93152909/147915630-0c419c67-f4d6-40fe-837b-3669de704801.png)
-
-
-* 為了改良數字大小沒有意義的問題，將不同的類別分別獨立為一欄
-* 缺點是需要較大的記憶空間與計算時間，且「類別欄位過多」或「單一類別過多」時越嚴重
-
-### 結論
-> 兩種編碼的使用時機，可以依照下面兩種情況選擇
-* 原始資料是有序離散值的話 => Label Encoding；原始資料是無序離散值的話 => One Hot Encoding
-
-* 預設採用Label Encoding，除非該特徵重要性高，且空間與時間負擔較低時，才應考慮使用One Hot Encoding
-
 ### 補充
 如果要換成 mnist 的資料集( 正確率約略：0.98 )，更改下列兩行即可：
 ```python
