@@ -7,18 +7,21 @@
 
 *  使用三種架構下去評估：
 	* RegularConv：regular CNN
+	
 	* BothConv：regular CNN with part depthwise separable CNN
+	
 	* SeparableConv：depthwise separable CNN
 	
 * 架構部分除了convolution的部分有更改，其他的都一樣，例如：Dropout、MaxPooling2D、BatchNormalization、Dense
 
 * 參數設定，三者一樣：
-	* epochs = 150
-	* batch_size = 256
-	* loss = categorical_crossentropy
-	* optimizer = Adam
-	* learning rate = 0.001
-
+	|Hyperparameter |Setting|
+	|-----|--------|
+	|Epochs|150|
+	|Batch_size  |256|
+	|Loss  |categorical_crossentropy|
+	|Optimizer  |Adam|
+	|Learning rate  |0.001|
 	
 * 正確率約略落在 0.8 ~ 0.9 ，如要更高可以參考：https://zhuanlan.zhihu.com/p/49180361
 
