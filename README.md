@@ -51,9 +51,11 @@
 * **【Fig5】FLOPs ( e+02 G ) comparison**  
 
 	* 表示不同模型的浮點運算數，不因為硬體不同而不同，較客觀
+	
 	* FLOPS、FLOPs兩種差別：
-		* FLOPS：全大寫，是floating point operations per second的縮寫，指每秒浮點運算次數，是衡量硬體效能的指標
-		* FLOPs：s小寫，是floating point operations的縮寫，意指浮點運算數，用於衡量模型的複雜度
+		* FLOPS( floating point operations per second )：全大寫，指每秒浮點運算次數，是衡量硬體效能的指標
+		
+		* FLOPs( floating point operations )：s小寫，意指浮點運算數，用於衡量模型的複雜度
 
 ![image](https://user-images.githubusercontent.com/93152909/153927501-0f5e21df-55d6-416f-9acf-a340597a1c13.png)
 
